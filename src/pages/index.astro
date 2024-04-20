@@ -1,50 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Greetings from './_components/Greetings'
+import Projects from './_components/Projects'
 ---
 
-<Layout title="Adam's page">
-	<main class="grid grid-rows-1 place-items-center scroll-smooth">
-    <section class="hero-section grid grid-rows-1 place-items-center snap-start">
-      <h1 class="text-6xl font-medium max-w-3xl font-dm-sans leading-snug">
-        Hi I’m <span class="adam">Adam</span>, I help manage the project, implement features, fix bugs and help the team on their tasks.
-      </h1>
-      <a href="#my-projects-section" class="scroll-to">
-        see what I have worked on so far
-        <span class="arrow-down"></span>
-      </a>
-    </section>
-    <section id="my-projects-section" class="snap-start">
-      <h1>test</h1>
-    </section>
+<Layout title="Adamson Vispo">
+	<main class="w-full grid grid-rows-1 place-items-center scroll-smooth max-w-[1140px] px-[15px]">
+    <Greetings />
+    <Projects />
   </main>
 </Layout>
 <style lang="scss">
   main {
     margin: auto;
-
-    section {
-      padding: 1rem;
-      height: 100vh;
-
-      &.hero-section {
-        h1 {
-          .adam {
-            color: #FF5757;
-          }
-        }
-      }
-
-      .scroll-to {
-        .arrow-down {
-          display: block;
-          background-image: url('/arrow-down.svg');
-          width: 20px;
-          height: 20px;
-          margin: 0 auto;
-          margin-top: 5px;
-          stroke: red;
-        }
-      }
-    }
   }
 </style>

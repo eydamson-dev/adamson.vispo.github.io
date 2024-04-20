@@ -23,8 +23,23 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
-<style is:global>
+<style lang="scss" is:global>
   html {
     background-color: #EDEDED;
   }
+
+  section {
+    .scroll-to {
+      .arrow-scroll-down {
+        display: block;
+        background-image: url('/arrow-down.svg');
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        margin-top: 5px;
+        stroke: red;
+      }
+    }
+  }
+
 </style>
