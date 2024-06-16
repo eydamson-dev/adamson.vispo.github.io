@@ -1,32 +1,5 @@
-.container {
-  display: flex;
-  gap: 2rem;
-  margin: auto;
-
-  .carousel {
-    flex-basis: 445px;
-
-    img {
-      width: 100%;
-    }
-
-  }
-
-  .info {
-    flex:1;
-
-    .description {
-      color: #000;
-      margin-bottom: 1rem;
-    }
-
-    .stacksContainer {
-      display: flex;
-      gap: 0.5rem;
-
-      span.stack {
-        background-color: #FF5757;
-      }
-    }
+.stacksContainer {
+  span.stack {
+    background-color: #FF5757;
   }
 }
