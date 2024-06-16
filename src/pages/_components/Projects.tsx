@@ -7,8 +7,8 @@ import styles from './Projects.module.scss'
 
 export default function Projects() {
   return (
-    <section id="my-projects-section" className="snap-start h-screen">
-      <h2 className="title font-dm-sans font-bold text-5xl my-9">
+    <section id="my-projects-section" className="min-h-svh w-full snap-start pb-5 leading-snug">
+      <h2 className="title my-9 font-dm-sans text-5xl font-bold">
         Projec<span className="text-red-500">t</span>s
       </h2>
       <div className={styles.container}>

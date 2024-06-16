@@ -2,12 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Greetings from './_components/Greetings'
 import Projects from './_components/Projects'
+import AboutMe from './_components/AboutMe'
 ---
 
 <Layout title="Adamson Vispo">
 	<main class="w-full grid grid-rows-1 place-items-center scroll-smooth max-w-[1140px] px-[15px]">
     <Greetings />
-    <Projects client:load/>
+    <Projects client:load></Projects>
+    <!-- <AboutMe client:load></AboutMe> -->
   </main>
 </Layout>
 <style lang="scss">
