@@ -1,0 +1,52 @@
+.cvContainer {
+  position: relative;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+  .cvReveal {
+    display: block;
+    transition: .5s ease-out;
+    clip-path: polygon(-1% 0%, 75% 0%, 101% 20%, 102% 102%, -1% 102%);
+    position: absolute;
+    top: 0;
+
+    &::before {
+      position: absolute;
+      transition: .5s ease-out;
+      border-bottom-left-radius: 1rem;
+      content: "";
+      background: white;
+      right: 0;
+      width: 70px;
+      height: 80px;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), -1px 1px 1px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), -1px 1px 1px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.7), -1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &:hover {
+    .cvReveal {
+      clip-path: polygon(-1% 0%, 11.09% -0.26%, 102.11% 72.76%, 102% 102%, -1% 102%);
+
+      &::before {
+        width: 227px;
+        height: 273px;
+      }
+    }
+  }
+
+  @media (hover:hover) {
+    &:hover {
+      .cvReveal {
+        clip-path: polygon(-1% 0%, 11.09% -0.26%, 102.11% 72.76%, 102% 102%, -1% 102%);
+
+        &::before {
+          width: 227px;
+          height: 273px;
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,22 @@
+import classNames from 'classnames'
+import styles from './Greetings.module.scss'
+
 export default function Greetings() {
   return (
-    <section className="hero-section min-h-svh grid w-full snap-start grid-rows-1 place-items-center text-center leading-snug tracking-wide @container md:text-left">
-      <h1 className="font-dm-sans text-2xl font-medium @lg:text-5xl">
-        Hey there! I'm <span className="text-red-500">Adam</span>, a web developer with 8 years of experience. Passionate about coding, problem-solving, and empowering teams. Let's create something amazing!
-      </h1>
+    <section className="hero-section min-h-svh grid w-full snap-start grid-rows-1 place-items-center text-center tracking-wide @container md:text-left">
+      <div className="grid justify-items-center gap-[24px] @2xl:grid-flow-col">
+        <h1 className="text-center font-dm-sans text-3xl font-medium leading-snug @3xl:text-4xl @3xl:leading-snug @4xl:text-5xl @4xl:leading-snug">
+          Hey there! I'm <span className="text-red-500">Adam</span>, a web developer with 8 years of experience. Passionate about coding, problem-solving, and empowering teams. Let's create something amazing!
+        </h1>
+        <div className={classNames(styles.cvContainer, "max-h-96 rounded-2xl")}>
+          <a href="/files/adamson-vispo-cv.pdf" target='_blank'>
+            <img className='max-h-96 w-[256px] rounded-2xl' src="/images/adamson-vispo-cv.jpg" />
+          </a>
+          <div className={classNames(styles.cvReveal, "max-h-96 rounded-2xl shadow-md shadow-black")}>
+            <img className='max-h-96 rounded-2xl' src="/images/portfolio-photo.jpg" />
+          </div>
+        </div>
+      </div>
       <a href="#my-projects-section" className="scroll-to">
         see what I have worked on so far
         <span className="arrow-scroll-down"></span>
