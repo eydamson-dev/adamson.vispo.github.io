@@ -12,7 +12,7 @@ export default function Greetings() {
         </h1>
         <div className={classNames(styles.cvContainer, "max-h-96 rounded-2xl")}>
           <a href={`${baseUrl}files/adamson-vispo-cv.pdf`} target='_blank'>
-            <img className='max-h-96 w-[256px] rounded-2xl' src="/images/adamson-vispo-cv.jpg" />
+            <img className='max-h-96 w-[256px] rounded-2xl' src={`${baseUrl}images/adamson-vispo-cv.jpg`} />
           </a>
           <div className={classNames(styles.cvReveal, "max-h-96 rounded-2xl shadow-md shadow-black")}>
             <img className='max-h-96 rounded-2xl' src={`${baseUrl}images/portfolio-photo.jpg`} />
