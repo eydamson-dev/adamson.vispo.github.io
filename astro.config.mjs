@@ -5,7 +5,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://adamson.vispo.github.io',
+  site: 'https://eydamson-dev.github.io/adamson.vispo/',
   base: 'adamson.vispo',
   integrations: [tailwind(), react()],
   devToolbar: {
