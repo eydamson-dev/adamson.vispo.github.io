@@ -1,6 +1,8 @@
 import classNames from 'classnames'
 import styles from './Greetings.module.scss'
 
+const baseUrl = import.meta.env.BASE_URL
+
 export default function Greetings() {
   return (
     <section className="hero-section min-h-svh grid w-full snap-start grid-rows-1 place-items-center text-center tracking-wide @container md:text-left">
@@ -9,11 +11,11 @@ export default function Greetings() {
           Hey there! I'm <span className="text-red-500">Adam</span>, a web developer with 8 years of experience. Passionate about coding, problem-solving, and empowering teams. Let's create something amazing!
         </h1>
         <div className={classNames(styles.cvContainer, "max-h-96 rounded-2xl")}>
-          <a href="/files/adamson-vispo-cv.pdf" target='_blank'>
+          <a href={`${baseUrl}files/adamson-vispo-cv.pdf`} target='_blank'>
             <img className='max-h-96 w-[256px] rounded-2xl' src="/images/adamson-vispo-cv.jpg" />
           </a>
           <div className={classNames(styles.cvReveal, "max-h-96 rounded-2xl shadow-md shadow-black")}>
-            <img className='max-h-96 rounded-2xl' src="/images/portfolio-photo.jpg" />
+            <img className='max-h-96 rounded-2xl' src={`${baseUrl}images/portfolio-photo.jpg`} />
           </div>
         </div>
       </div>

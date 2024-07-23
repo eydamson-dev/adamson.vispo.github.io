@@ -37,7 +37,7 @@ export default function ProjectCard({ data }: Props) {
         }}
       >
         <div className={'mb-6 @lg:mb-0'}>
-          <img className='block rounded-lg shadow-lg ' src={data.images[0]} alt="image" />
+          <img className='block rounded-lg shadow-lg ' src={`${import.meta.env.BASE_URL}${data.images[0]}`} alt="image" />
         </div>
         <div className={'flex flex-col gap-2'}>
           <div className={classNames("title text-2xl font-bold", styles.title)}>
